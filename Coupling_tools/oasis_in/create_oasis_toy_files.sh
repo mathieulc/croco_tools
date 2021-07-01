@@ -145,13 +145,14 @@ elif  [ $model == ww3 ] ; then
 
     varlist=(WW3_T0M1 \
             WW3__OHS \
-            WW3_CDIR \
-            WW3_SDIR \
+            WW3__DIR \
             WW3_TWOX \
             WW3_TWOY \
             WW3_TAWX \
             WW3_TAWY \
-            WW3__CHA)
+            WW3_ACHA)
+#WW3_CDIR \
+#WW3_SDIR \
 
     dimtime=time
 
@@ -163,13 +164,16 @@ elif  [ $model == ww3 ] ; then
 
     varlist_toy=(TOY_T0M1 \
                 TOY___HS \
-                TOY_CDIR \
-                TOY_SDIR \
+                TOY__DIR \
                 TOY_TWOX \
                 TOY_TWOY \
                 TOY_TAWX \
                 TOY_TAWY \
                 TOY__CHA)
+
+#TOY_CDIR
+#TOY_SDIR
+
 else
     echo 'ERROR: '$model' case is not implemented yet. Exit...'
     echo ' ' 
